@@ -9,6 +9,19 @@
 
 <br/>
 
+**Or you can run app inside docker container**
+
+    $ docker run -it \
+    -p 80:8080 \
+    --name nodejs-voting-game \
+    marley/nodejs-voting-game
+
+<br/>
+
+**Result**
+
+<br/>
+
 ![Application](/img/pic1.png?raw=true)
 
 <br/>
