@@ -5,14 +5,9 @@ RUN apk update && apk upgrade && \
 
 WORKDIR '/project'
 
-RUN git clone https://github.com/marley-nodejs/voting-game .
+COPY ./package*.json .
 RUN npm install
 
+COPY . .
+
 CMD ["npm", "run", "start"]
-
-# FROM marley/nodejs:latest
-
-# RUN git clone https://github.com/marley-nodejs/voting-game .
-# RUN npm install
-
-# CMD ["npm", "start"]
