@@ -18,11 +18,11 @@
 
 <br/>
 
-**As linux service (did not test)**
+**As ubuntu linux service (did not test)**
 
     # vi /etc/systemd/system/voting-game.service
 
-вставить содержимое файла voting-game.service
+insert content from file **voting-game.service**
 
     # systemctl enable voting-game.service
     # systemctl start voting-game.service
@@ -39,3 +39,9 @@
 <br/>
 
 ![Application](/img/pic2.png?raw=true)
+
+---
+
+**Marley**
+
+<a href="https://jsdev.org">jsdev.org</a>

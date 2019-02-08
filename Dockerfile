@@ -2,9 +2,6 @@ FROM node:alpine
 
 RUN apk update && apk upgrade
 
-# RUN apk update && apk upgrade && \
-#    apk add --no-cache bash git 
-
 WORKDIR '/project'
 
 COPY ./package*.json .
