@@ -18,6 +18,18 @@
 
 <br/>
 
+**As linux service (did not test)**
+
+    # vi /etc/systemd/system/voting-game.service
+
+вставить содержимое файла voting-game.service
+
+    # systemctl enable voting-game.service
+    # systemctl start voting-game.service
+    # systemctl status voting-game.service
+
+<br/>
+
 **Result**
 
 <br/>
