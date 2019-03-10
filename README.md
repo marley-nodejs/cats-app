@@ -2,31 +2,47 @@
 
 **How to run:**
 
-    $ git clone https://github.com/marley-nodejs/voting-game
-    $ cd voting-game
+<br/>
+
+### Varian 1: Simple node app
+
+    $ git clone https://github.com/marley-nodejs/cats-app
+    $ cd cats-app
     $ npm install
     $ npm start
 
 <br/>
 
-**Or you can run app inside docker container**
+### Varian 2: App inside docker container
 
-    $ docker run -it \
-    -p 80:8080 \
-    --name nodejs-voting-game \
-    marley/nodejs-voting-game
+(Docker should be installed)
 
 <br/>
 
-**As ubuntu linux service (did not test)**
+    $ docker run -it \
+    -p 80:8080 \
+    --name nodejs-cats-app \
+    marley/nodejs-cats-app
 
-    # vi /etc/systemd/system/voting-game.service
+<br/>
 
-insert content from file **voting-game.service**
+### Varian 3: As ubuntu linux service
 
-    # systemctl enable voting-game.service
-    # systemctl start voting-game.service
-    # systemctl status voting-game.service
+(Docker should be installed)
+
+    # vi /etc/systemd/system/cats-app.service
+
+insert content from file **cats-app.service**
+
+    # systemctl enable cats-app.service
+    # systemctl start cats-app.service
+    # systemctl status cats-app.service
+
+<br/>
+
+### Varian 4: As Ansible script
+
+http://github.com/marley-nodejs/cats-app-ansible/
 
 <br/>
 

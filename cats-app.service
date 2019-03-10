@@ -1,0 +1,21 @@
+[Unit]
+Description=cats-app
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+
+Restart=always
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill cats-app
+ExecStartPre=-/usr/bin/docker rm cats-app
+ExecStartPre=-/usr/bin/docker pull marley/cats-app:latest
+ExecStart=/bin/sh -c '/usr/bin/docker run --name cats-app   \
+ -p 80:8080                        \
+ marley/cats-app'
+ExecStop=-/usr/bin/docker kill cats-app
+ExecStop=-/usr/bin/docker rm cats-app
+
+[Install]
+WantedBy=multi-user.target
