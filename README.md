@@ -40,9 +40,30 @@ insert content from file **cats-app.service**
 
 <br/>
 
-### Varian 4: As Ansible script
+### Varian 4: By Ansible script
 
 http://github.com/marley-nodejs/cats-app-ansible/
+
+<br/>
+
+### Varian 5: Minikube (mini local kubernetes) service
+
+    $ minikube start
+
+    $ minikube addons enable ingress
+
+    $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
+
+    $ kubectl apply -f minikube-cats-app-deployment.yaml
+
+    $ kubectl apply -f minikube-cats-app-cluster-ip-service.yaml
+
+    $ kubectl apply -f minikube-cats-app-ingress-service.yaml
+
+    $ minikube ip
+    192.168.99.119
+
+    https://192.168.99.119/
 
 <br/>
 
