@@ -54,11 +54,19 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
     $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
 
-    $ kubectl apply -f minikube-cats-app-deployment.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
 
-    $ kubectl apply -f minikube-cats-app-cluster-ip-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-cluster-ip-service.yaml
 
-    $ kubectl apply -f minikube-cats-app-ingress-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-ingress-service.yaml
+
+<br/>
+
+    $ kubectl get ing
+    NAME              HOSTS   ADDRESS   PORTS   AGE
+    ingress-service   *                 80      24s
+
+<br/>
 
     $ minikube ip
     192.168.99.119
