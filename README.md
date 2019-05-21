@@ -75,6 +75,24 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
 <br/>
 
+### Varian 6: Google Cloud (GKE) (LoadBalancer)
+
+$ gcloud container clusters create cats-cluster \
+    --num-nodes 2 \
+    --machine-type n1-standard-1 \
+    --zone us-central1-a
+
+$ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
+
+
+$ kubectl expose deployment minikube-cats-app-deployment --type="LoadBalancer"
+
+$ kubectl get services
+
+http://35.226.108.248:8080/
+
+<br/>
+
 **Result**
 
 <br/>
