@@ -1,5 +1,7 @@
 # Make a Picture voting game with nodejs
 
+Did not tested after update
+
 **How to run:**
 
 <br/>
@@ -52,11 +54,11 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
     $ minikube addons enable ingress
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-deployment.yaml
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-cluster-ip-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-cluster-ip-service.yaml
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-ingress-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-ingress-service.yaml
 
 <br/>
 
