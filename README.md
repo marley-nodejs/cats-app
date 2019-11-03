@@ -1,7 +1,5 @@
 # Make a Picture voting game with nodejs
 
-Did not tested after update
-
 **How to run:**
 
 <br/>
@@ -49,6 +47,9 @@ http://github.com/marley-nodejs/cats-app-ansible/
 <br/>
 
 ### Varian 5: Minikube (mini local kubernetes) service
+
+    $ minikube version
+    minikube version: v1.4.0
 
     $ minikube start
 
