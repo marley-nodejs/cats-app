@@ -52,8 +52,6 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
     $ minikube addons enable ingress
 
-    $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
-
     $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
 
     $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-cluster-ip-service.yaml
@@ -81,6 +79,7 @@ http://github.com/marley-nodejs/cats-app-ansible/
         --num-nodes 2 \
         --machine-type n1-standard-1 \
         --zone us-central1-a
+
 <br/>
 
     $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
@@ -112,3 +111,6 @@ http://35.226.108.248:8080/
 **Marley**
 
 <a href="https://jsdev.org">jsdev.org</a>
+
+Any questions on eng: https://t.me/jsdev_org  
+Любые вопросы на русском: https://t.me/jsdev_ru
