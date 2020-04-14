@@ -55,6 +55,27 @@ http://github.com/webmakaka/cats-app-ansible/
 
     $ minikube addons enable ingress
 
+
+**Using helm3:**
+
+    $ helm repo add webmakaka https://charts-repo.webmakaka.com
+
+    $ helm repo update
+
+    $ helm search repo webmakaka/
+
+    $ helm install cats-app webmakaka/cats-app
+
+<br/>
+
+    // To remove
+    // $ helm delete cats-app
+    // $ helm repo remove webmakaka
+
+
+
+**Or Manually:**
+
     $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-deployment.yaml
 
     $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-cluster-ip-service.yaml
