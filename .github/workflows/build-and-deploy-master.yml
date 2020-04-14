@@ -1,0 +1,26 @@
+name: Build and Deploy Project
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build and Deploy Project
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+
+      # DOCKERHUB
+
+      - name: Build the Docker container image
+        run: docker build . -f ./Dockerfile -t webmakaka/cats-app:latest
+      - name: Push the image to hub.docker.com
+        run: |
+          docker login -u webmakaka -p "${DOCKER_HUB_PASS}"
+          docker push webmakaka/cats-app:latest
+        env:
+          DOCKER_HUB_PASS: ${{ secrets.DOCKER_HUB_PASS }}

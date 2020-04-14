@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cats-app
-          image: marley/nodejs-cats-app
+          image: webmakaka/cats-app
           ports:
             - containerPort: 8080

@@ -6,7 +6,7 @@
 
 ### Varian 1: Simple node app
 
-    $ git clone https://github.com/marley-nodejs/cats-app
+    $ git clone https://github.com/webmakaka/cats-app
     $ cd cats-app
     $ npm install
     $ npm start
@@ -22,7 +22,7 @@
     $ docker run -it \
     -p 80:8080 \
     --name nodejs-cats-app \
-    marley/nodejs-cats-app
+    webmakaka/cats-app
 
 <br/>
 
@@ -42,7 +42,7 @@ insert content from file **cats-app.service**
 
 ### Varian 4: By Ansible script
 
-http://github.com/marley-nodejs/cats-app-ansible/
+http://github.com/webmakaka/cats-app-ansible/
 
 <br/>
 
@@ -55,11 +55,11 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
     $ minikube addons enable ingress
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-deployment.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-deployment.yaml
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-cluster-ip-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-cluster-ip-service.yaml
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube/minikube-cats-app-ingress-service.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-ingress-service.yaml
 
 <br/>
 
@@ -85,7 +85,7 @@ http://github.com/marley-nodejs/cats-app-ansible/
 
 <br/>
 
-    $ kubectl apply -f https://raw.githubusercontent.com/marley-nodejs/cats-app/master/minikube-cats-app-deployment.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube-cats-app-deployment.yaml
 
 <br/>
 
