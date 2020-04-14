@@ -21,7 +21,7 @@
 
     $ docker run -it \
     -p 80:8080 \
-    --name nodejs-cats-app \
+    --name cats-app \
     webmakaka/cats-app
 
 <br/>
