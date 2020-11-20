@@ -1,0 +1,4 @@
+applications:
+- name: CatsApp
+  random-route: true
+  memory: 256M
