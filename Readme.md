@@ -58,27 +58,14 @@ http://github.com/webmakaka/cats-app-ansible/
     $ cd k8s
     $ kubectl apply -f *
 
-
-<!--
 <br/>
 
 **Using helm3:**
 
-    $ helm repo add webmakaka https://charts-repo.webmakaka.com
+**Instructions are here:**
 
-    $ helm repo update
+https://github.com/webmakaka/Creating-a-Helm-Chart-Repository-using-Github-Actions
 
-    $ helm search repo webmakaka/
-
-    $ helm install cats-app webmakaka/cats-app
-
-<br/>
-
-    // To remove
-    // $ helm delete cats-app
-    // $ helm repo remove webmakaka
-
--->
 
 <br/>
 
