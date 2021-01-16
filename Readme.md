@@ -55,6 +55,12 @@ http://github.com/webmakaka/cats-app-ansible/
 
     $ minikube addons enable ingress
 
+    $ cd k8s
+    $ kubectl apply -f *
+
+
+<!--
+<br/>
 
 **Using helm3:**
 
@@ -72,15 +78,7 @@ http://github.com/webmakaka/cats-app-ansible/
     // $ helm delete cats-app
     // $ helm repo remove webmakaka
 
-
-
-**Or Manually:**
-
-    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-deployment.yaml
-
-    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-cluster-ip-service.yaml
-
-    $ kubectl apply -f https://raw.githubusercontent.com/webmakaka/cats-app/master/minikube/minikube-cats-app-ingress-service.yaml
+-->
 
 <br/>
 
